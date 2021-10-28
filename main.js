@@ -121,7 +121,7 @@ function restartGame() {
     "startOrGuess"
   ).innerHTML = `<button class="button" type="button" onclick="return start();">Start</button>`;
   document.getElementById("guessTheWord").innerHTML = `<p></p>`;
-  document.getElementById("picture").innerHTML = `<img src="/hangman.png">`;
+  document.getElementById("picture").innerHTML = `<img src="/image/hangman.png">`;
   document.getElementById("instruction").innerHTML =
     "Insert one word to start the game";
   document.getElementById("wrongLetters").innerHTML = `<p></p>`;
