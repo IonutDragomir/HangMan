@@ -1,0 +1,57 @@
+h1 {
+  margin-left: 40vw;
+  margin-top: 4vw;
+}
+label {
+  margin-left: 37vw;
+  margin-top: 10vw;
+}
+
+input {
+  margin-left: 37vw;
+  margin-bottom: 2px;
+  border-radius: 10px;
+  border-color: rgb(0, 162, 255);
+}
+
+p {
+  display: inline-block;
+  font-size: large;
+}
+
+img {
+  width: 15vw;
+  height: 10vw;
+}
+
+#picture {
+  margin-left: 37vw;
+  margin-top: 1vw;
+}
+
+#startOrGuess {
+  margin-left: 37vw;
+}
+
+#guessTheWord {
+  margin-left: 37vw;
+}
+
+#wrongLetters {
+  margin-left: 37vw;
+}
+
+.button {
+  border-radius: 10px;
+  border-color: rgb(0, 162, 255);
+}
+
+.winner {
+    color: green;
+    font-weight: bold;
+}
+
+.lost {
+    color: red;
+    font-weight: bold;
+}

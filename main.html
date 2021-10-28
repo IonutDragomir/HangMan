@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>HangMan</title>
+  </head>
+  <body>
+    <h1>HangMan</h1>
+    <label for="insertWord" id="instruction"
+      >Insert one word to start the game</label
+    ><br />
+    <input type="text" name="insertWord" id="insertWord" /><br />
+    <em id="startOrGuess">
+      <button class="button" type="button" onclick="return start();">
+        Start
+      </button>
+    </em>
+
+    <button class="button" type="button" onclick="return restartGame();">
+      Restart game
+    </button>
+
+    <div id="guessTheWord"></div>
+    <div id="wrongLetters"></div>
+    <div id="picture">
+      <img src="/image/hangman.png" />
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
