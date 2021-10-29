@@ -30,7 +30,7 @@ function guessTheLetter() {
   let atLeastOneLetterCorrect = 0;
   for (let position = 0; position < storeWord.length; ++position) {
     if (choosedLetter === storeWord[position]) {
-      // dupa ce s a gasit o litera corecta verificam daca ea nu a fost deja ghicita
+      // dupa ce s-a gasit o litera corecta verificam daca ea nu a fost deja ghicita
       ++atLeastOneLetterCorrect; // crestem valoarea indiferent daca a fost ghicita sau nu pentru ca e o litera corecta
       for (let i = 0; i < guessedWord.length; ++i) {
         if (choosedLetter === guessedWord[i]) {
@@ -44,7 +44,7 @@ function guessTheLetter() {
     }
     contor = 0;
   }
-  guessedWord.push(choosedLetter); // adaugam litera corecta in sirul de litere corecte dupa ce citim toto cuvantul ca sa se afiseze o litera de mai multe ori in cuvant
+  guessedWord.push(choosedLetter); // adaugam litera corecta in sirul de litere corecte dupa ce citim tot cuvantul ca sa se poata afisa o litera de mai multe ori in cuvant
   if (atLeastOneLetterCorrect === 0) {
     document.getElementById("wrongLetters").innerHTML += `${choosedLetter}`;
     wrongLetter();
